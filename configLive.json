@@ -1,0 +1,5 @@
+{
+  "apiUrlPDVsAll": "/data/mapas.json",
+  "apiUrlPDVsUpload": "http://localhost:3005/api/pdvs/upload",
+  "apiUrlPDVsClean": "http://localhost:3005/api/pdvs/clean"
+}
