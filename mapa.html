@@ -14,12 +14,12 @@
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link rel="icon" href="images/logocorporate_0.png" type="image/png">
-  <script type="module" crossorigin src="./assets/mapa-v0.0.4 - 2025-10-29.xf6WOgsl.js"></script>
-  <link rel="modulepreload" crossorigin href="./assets/utils-v0.0.4 - 2025-10-29.C-KeiqKW.js">
-  <link rel="modulepreload" crossorigin href="./assets/vendor-modules-v0.0.4 - 2025-10-29.bWRuDvxm.js">
-  <link rel="modulepreload" crossorigin href="./assets/config-v0.0.4 - 2025-10-29.Cxwey6pQ.js">
-  <link rel="stylesheet" crossorigin href="./assets/utils-v0.0.4 - 2025-10-29.CyEcqww6.css">
-  <link rel="stylesheet" crossorigin href="./assets/vendor-modules-v0.0.4 - 2025-10-29.Dgihpmma.css">
+  <script type="module" crossorigin src="./assets/mapa-v0.0.5 - 2025-10-29.C3JCyzqV.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/utils-v0.0.5 - 2025-10-29.DgVojZgu.js">
+  <link rel="modulepreload" crossorigin href="./assets/vendor-modules-v0.0.5 - 2025-10-29.DWNubwUu.js">
+  <link rel="modulepreload" crossorigin href="./assets/config-v0.0.5 - 2025-10-29.Cxwey6pQ.js">
+  <link rel="stylesheet" crossorigin href="./assets/utils-v0.0.5 - 2025-10-29.DCNoVG2b.css">
+  <link rel="stylesheet" crossorigin href="./assets/vendor-modules-v0.0.5 - 2025-10-29.Dgihpmma.css">
 </head>
 
 <body class="font-fira bg-primary-blue">
@@ -66,29 +66,26 @@
 
                     <!-- Filter: PDV Name -->
                     <div class="relative">
-                        <div id="filter-pdvName-icon"
-                            class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                            <!-- Icon will be inserted by JS -->
+                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-400" viewBox="4 6 16 16" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><title>Store Name Sign Icon</title><rect x="6" y="8" width="12" height="6" rx="1" ry="1" /><path d="M8 11h8" /><path d="M12 14v5" /></svg>
                         </div>
                         <input type="text" id="filterPdvName" placeholder="Lugar..."
-                            class="w-full pl-10 pr-3 py-2.5 md:py-2 text-base md:text-sm border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-100 focus:ring-offset-1 transition-all duration-100 touch-manipulation bg-white text-dark-black placeholder-gray-500">
+                            class="w-full pl-12 pr-3 py-2.5 md:py-2 text-base md:text-sm border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-100 focus:ring-offset-1 transition-all duration-100 touch-manipulation bg-white text-dark-black placeholder-gray-500">
                     </div>
 
                     <!-- Filter: Direccion -->
                     <div class="relative">
-                        <div id="filter-direccion-icon"
-                            class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                            <!-- Icon will be inserted by JS -->
+                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z" /><circle cx="12" cy="11" r="3" /></svg>
                         </div>
                         <input type="text" id="filterDireccion" placeholder="Dirección..."
-                            class="w-full pl-10 pr-3 py-2.5 md:py-2 text-base md:text-sm border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-100 focus:ring-offset-1 transition-all duration-100 touch-manipulation bg-white text-dark-black placeholder-gray-500">
+                            class="w-full pl-12 pr-3 py-2.5 md:py-2 text-base md:text-sm border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-100 focus:ring-offset-1 transition-all duration-100 touch-manipulation bg-white text-dark-black placeholder-gray-500">
                     </div>
 
                     <!-- Filter: Localidad -->
                     <div class="relative">
-                        <div id="filter-localidad-icon"
-                            class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                            <!-- Icon will be inserted by JS -->
+                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1" ry="1" /><rect x="14" y="3" width="7" height="7" rx="1" ry="1" /><rect x="3" y="14" width="7" height="7" rx="1" ry="1" /><rect x="14" y="14" width="7" height="7" rx="1" ry="1" /></svg>
                         </div>
                         <select id="filterLocalidad"
                             class="w-full pl-12 pr-3 py-2.5 md:py-2 text-base md:text-sm border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-100 focus:ring-offset-1 transition-all duration-100 touch-manipulation bg-white text-dark-black">
@@ -98,9 +95,8 @@
 
                     <!-- Filter: Segmentacion MKT -->
                     <div class="relative">
-                        <div id="filter-segmentacion-icon"
-                            class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                            <!-- Icon will be inserted by JS -->
+                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><title>Front Store / Bar Icon</title><path d="M3 7h18l-1 3H4l-1-3z" /><rect x="6" y="4" width="12" height="2" rx="0.3" /><path d="M4 10h16v9a2 2 0 01-2 2H6a2 2 0 01-2-2v-9z" /><rect x="10" y="13" width="4" height="6" rx="0.5" /><path d="M3 21h18" /></svg>
                         </div>
                         <select id="filterSegmentacion"
                             class="w-full pl-12 pr-3 py-2.5 md:py-2 text-base md:text-sm border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-100 focus:ring-offset-1 transition-all duration-100 touch-manipulation bg-white text-dark-black">
@@ -110,9 +106,8 @@
 
                     <!-- Filter: Horario -->
                     <div class="relative">
-                        <div id="filter-horario-icon"
-                            class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                            <!-- Icon will be inserted by JS -->
+                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9" /><path d="M12 8v4l3 3" /></svg>
                         </div>
                         <select id="filterHorario"
                             class="w-full pl-12 pr-3 py-2.5 md:py-2 text-base md:text-sm border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-100 focus:ring-offset-1 transition-all duration-100 touch-manipulation bg-white text-dark-black">
@@ -172,7 +167,7 @@
                         </svg>
                     </button>
 
-                    <!-- Search Box -->
+                    <!-- Search Box
                     <div
                         class="flex-1 bg-white rounded-full shadow-lg hover:shadow-xl transition flex items-center px-4 py-3 min-w-[280px] sm:min-w-[360px] max-w-md">
                         <svg class="w-5 h-5 text-gray-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -181,7 +176,7 @@
                         </svg>
                         <input type="text" id="quickSearch" placeholder="Buscar PDV..."
                             class="flex-1 outline-none text-sm md:text-base text-dark-black placeholder-gray-400">
-                    </div>
+                    </div> -->
                 </div>
 
                 <!-- Active Filters Bar -->
