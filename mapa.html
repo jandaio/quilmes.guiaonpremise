@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, viewport-fit=cover, interactive-widget=resizes-content">
     <title>Quilmes - Guia On Premise - V0.1</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,12 +14,12 @@
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link rel="icon" href="images/logocorporate_0.png" type="image/png">
-  <script type="module" crossorigin src="./assets/mapa-v1.0.0.cbW8Ywoe.js"></script>
-  <link rel="modulepreload" crossorigin href="./assets/main-v1.0.0.CRNlN7N1.js">
-  <link rel="modulepreload" crossorigin href="./assets/vendor-modules-v1.0.0.BDrV61ej.js">
-  <link rel="modulepreload" crossorigin href="./assets/config-v1.0.0.Cxwey6pQ.js">
-  <link rel="stylesheet" crossorigin href="./assets/main-v1.0.0.OFqmlCPo.css">
-  <link rel="stylesheet" crossorigin href="./assets/vendor-modules-v1.0.0.Dgihpmma.css">
+  <script type="module" crossorigin src="./assets/mapa-v0.0.2.BSHMDZD5.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/main-v0.0.2.C6DaADoF.js">
+  <link rel="modulepreload" crossorigin href="./assets/vendor-modules-v0.0.2.DcaZV7Wu.js">
+  <link rel="modulepreload" crossorigin href="./assets/config-v0.0.2.Cxwey6pQ.js">
+  <link rel="stylesheet" crossorigin href="./assets/main-v0.0.2.BMRsn4sA.css">
+  <link rel="stylesheet" crossorigin href="./assets/vendor-modules-v0.0.2.Dgihpmma.css">
 </head>
 
 <body class="font-fira bg-primary-blue h-screen flex flex-col ">
@@ -43,6 +44,13 @@
                 <div class="pt-2">
                     <img src="images/cmq-130-logo-cmyk-secundario-02-blanco.png.webp" alt="Filtros"
                         class="h-28 sm:h-32 w-auto">
+                </div>
+
+                <!-- Version Title -->
+                <div class="pb-2">
+                    <h2 id="versionTitle" class="text-white text-xs font-medium text-center opacity-80">
+                        Guia On Premise v<span id="appVersion">0.0.0</span>
+                    </h2>
                 </div>
             </div>
 
@@ -150,7 +158,8 @@
         <!-- Map Container -->
         <main class="flex-1 relative flex flex-col bg-light-gray">
             <!-- Search Bar with Filter Button (Google Maps style) -->
-            <div class="absolute top-4 left-4 right-4 z-40 flex flex-wrap items-stretch gap-3 pointer-events-none">
+            <div
+                class="absolute top-4 left-4 right-4 z-40 flex flex-wrap items-stretch gap-3 pointer-events-none safe-area-inset">
                 <div class="flex items-center gap-3 pointer-events-auto">
 
                     <!-- Filter Toggle Button -->
